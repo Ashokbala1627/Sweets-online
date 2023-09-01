@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sweet Bunny</title>
+    <link rel="icon" href="./icon.com.png" type="image/png" />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+
+    <style>
+      .text {
+        color: black;
+        font-weight: bold;
+      }
+      Section {
+        text-align: right;
+      }
+      .card-text {
+        text-align: center;
+        background-color: bisque;
+        font-weight: bolder;
+        border-radius: 100px;
+      }
+      .card-body {
+        background-color: rgba(0, 0, 0, 0.14);
+        margin: auto;
+      }
+
+      .card-body:hover {
+        background-color: rgba(255, 159, 91, 0.132);
+        padding: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <img src="./pngwing.com (30).png" alt=" logo" width="10%" />
+      <a class="navbar-brand text" href="#">Sweet Bunny</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Cakes</a>
+          </li>
+          <li class="nav-item dropdown active">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Cakes By Flavours
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Black Forest Cake</a>
+              <a class="dropdown-item" href="#">Blueberry cake</a>
+              <a class="dropdown-item" href="#">Butterscotch cake</a>
+              <a class="dropdown-item" href="#">Chocolate cake</a>
+              <div class="dropdown-divider">Mixed Fruit Cake</div>
+              <a class="dropdown-item" href="#">More...</a>
+            </div>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link">Contact Us</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+            Search
+          </button>
+        </form>
+      </div>
+    </nav>
+    <!-- carousel slide -->
+    <div id="carouselInterval" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-interval="10000">
+          <img
+            src="./pexels-valeria-boltneva-827516.jpg"
+            class="d-block w-100"
+            alt="img1"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="./pexels-nestor-cortez-960540.jpg"
+            class="d-block w-100"
+            alt="img1"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="./pexels-valci-leal-9157322.jpg"
+            class="d-block w-100"
+            alt="img1"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="./pexels-quang-nguyen-vinh-2144200.jpg"
+            class="d-block w-100"
+            alt="img3"
+          />
+        </div>
+      </div>
+      <a
+        class="carousel-control-prev"
+        href="#carouselInterval"
+        role="button"
+        data-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a
+        class="carousel-control-next"
+        href="#carouselInterval"
+        role="button"
+        data-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    <!-- cards -->
+    <div class="container box mt-3">
+      <div style="text-align: center; font-size: 25px; font-weight: bold">
+        Top restaurants with online food delivery
+      </div>
+      <hr style="border: 1px solid" />
+      <div class="row">
+        <div class="col-lg-2 col-md-3 col-sm-6 col-xs-6 mb-3">
+          <div class="card">
+            <div class="card-body">
+              <section>
+                <i class="fa-solid fa-cart-shopping fa-md"></i>
+              </section>
+              <img src="./pngwing.com.png" alt="burger" width="100%" />
+              <h5 class="card-title">Chicken Burger</h5>
+              <p class="card-text">$120</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-6 col-xs-6 mb-3">
+          <div class="card">
+            <div class="card-body">
+              <section>
+                <i class="fa-solid fa-cart-shopping fa-md"></i>
+              </section>
+              <img src="./pngwing(1).com.png" alt="Pizza" width="100%" />
+              <h5 class="card-title">Macorni pizza</h5>
+              <p class="card-text">$ 300</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6 mb-3">
+          <div class="card">
+            <div class="card-body">
+              <section>
+                <i class="fa-solid fa-cart-shopping fa-md"></i>
+              </section>
+              <img src="./pngwing3.com.png" alt="French fries" width="100%" />
+              <h5 class="card-title">French-Fries with minus</h5>
+              <p class="card-text">$ 180</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6 mb-3">
+          <div class="card">
+            <div class="card-body">
+              <section>
+                <i class="fa-solid fa-cart-shopping fa-md"></i>
+              </section>
+              <img src="./pngwing4.com.png" alt="ice cream" width="100%" />
+              <h5 class="card-title">Icecream italian</h5>
+              <p class="card-text">$ 120</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6 mb-3">
+          <div class="card">
+            <div class="card-body">
+              <section>
+                <i class="fa-solid fa-cart-shopping fa-md"></i>
+              </section>
+              <img src="./pngwing.5com.png" alt="cake" width="100%" />
+              <h5 class="card-title">Chocolate Desserts</h5>
+              <p class="card-text">$ 90</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6 mb-3">
+          <div class="card">
+            <div class="card-body">
+              <section>
+                <i class="fa-solid fa-cart-shopping fa-md"></i>
+              </section>
+              <img src="./pngwing6.com.png" alt="Sandwich" width="100%" />
+              <h5 class="card-title">Cheese Sandwich</h5>
+              <p class="card-text">$ 110</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- advertisement -->
+    <article class="container">
+      <img src="./ad.png" alt="html advertisment" width="100%" />
+    </article>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center text-lg-start box">
+      <!-- Grid container -->
+      <div class="container p-4 pb-0">
+        <form action="">
+          <!--Grid row-->
+          <div class="row">
+            <!--Grid column-->
+            <div class="col-auto mb-4 mb-md-0">
+              <p class="pt-2">
+                <strong
+                  >Activate to updates in via email, Keep on every
+                  offers</strong
+                >
+              </p>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-md-5 col-12 mb-4 mb-md-0">
+              <!-- Email input -->
+              <div class="form-outline mb-4">
+                <input type="email" id="form5Example25" class="form-control" />
+                <label class="form-label" for="form5Example25"
+                  >Email address</label
+                >
+              </div>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-auto mb-4 mb-md-0">
+              <!-- Submit button -->
+              <button type="submit" class="btn btn-primary mb-4">
+                Subscribe
+              </button>
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </form>
+      </div>
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2020 Copyright:
+        <a class="text-dark" href="#">www.SweetBunny.shop developed by Ashok</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+  </body>
+</html>
